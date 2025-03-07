@@ -93,8 +93,6 @@ console.log(getOS()); // Outputs: "MacOS"
 
 ---
 
-### 📜 **CONTRIBUTING.md**
-
 # 🚀 Contributing to Hookies Key Bindings
 
 🎉 Thank you for considering contributing to **Hookies Key Bindings**!  
