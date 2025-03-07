@@ -1,5 +1,9 @@
 # 🚀 @hookies/key-bindings
 
+[![npm version](https://img.shields.io/npm/v/@hookies/key-bindings?color=blue)](https://www.npmjs.com/package/@amaru333/key-bindings)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Supported-blue)](https://www.typescriptlang.org/)
+[![GitHub issues](https://img.shields.io/github/issues/Amaru333/-hookies-key-bindings)](https://github.com/Amaru333/-hookies-key-bindings/issues)
+
 A lightweight **React Hook** for adding **keyboard shortcuts** to your application. Easily bind keyboard combinations to functions without extra configuration!
 
 ## 📦 Installation
