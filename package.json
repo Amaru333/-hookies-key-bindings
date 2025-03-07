@@ -1,0 +1,30 @@
+{
+  "name": "@hookies/key-bindings",
+  "version": "1.0.5",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "Amaru",
+  "license": "ISC",
+  "description": "A react hook to add key bindings to your application",
+  "dependencies": {
+    "react": "^19.0.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.0.10",
+    "rollup": "^4.34.9",
+    "typescript": "^5.8.2"
+  }
+}

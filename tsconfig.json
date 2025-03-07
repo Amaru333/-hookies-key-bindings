@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": ["es2015", "dom"]
+  },
+  "include": ["src"]
+}
