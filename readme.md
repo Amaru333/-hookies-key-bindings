@@ -95,7 +95,6 @@ console.log(getOS()); // Outputs: "MacOS"
 
 ### 📜 **CONTRIBUTING.md**
 
-````md
 # 🚀 Contributing to Hookies Key Bindings
 
 🎉 Thank you for considering contributing to **Hookies Key Bindings**!  
@@ -112,7 +111,6 @@ We welcome all contributions, whether it's **bug fixes, feature additions, docum
   git clone https://github.com/YOUR-USERNAME/-hookies-key-bindings.git
   cd -hookies-key-bindings
   ```
-````
 
 ### **2️⃣ Set Up the Project**
 
