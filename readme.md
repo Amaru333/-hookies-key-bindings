@@ -193,8 +193,6 @@ _(Unit tests are coming soon!)_
 
 If you need any help or have questions, feel free to **open an issue** on [GitHub Issues](https://github.com/Amaru333/-hookies-key-bindings/issues).
 
-```
-
 ---
 
 ## 📜 **License**
@@ -209,4 +207,3 @@ If you like this project, give it a ⭐ on [GitHub](https://github.com/Amaru333/
 For issues or feature requests, open an [issue](https://github.com/Amaru333/-hookies-key-bindings/issues).
 
 Happy coding! 🚀
-```
