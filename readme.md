@@ -93,19 +93,107 @@ console.log(getOS()); // Outputs: "MacOS"
 
 ---
 
-## 🏗 **Contributing**
+### 📜 **CONTRIBUTING.md**
 
-We welcome contributions! To contribute:
+````md
+# 🚀 Contributing to Hookies Key Bindings
 
-1. **Fork** this repo.
-2. **Clone** your fork.
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Make your changes.
-5. Run tests (coming soon).
-6. Submit a **pull request**! 🚀
+🎉 Thank you for considering contributing to **Hookies Key Bindings**!  
+We welcome all contributions, whether it's **bug fixes, feature additions, documentation updates, or tests**.
+
+## 🛠 How to Contribute
+
+### **1️⃣ Fork the Repository**
+
+- Click on the **"Fork"** button in the top-right corner of the [repository](https://github.com/Amaru333/-hookies-key-bindings).
+- Clone your forked repository:
+
+  ```bash
+  git clone https://github.com/YOUR-USERNAME/-hookies-key-bindings.git
+  cd -hookies-key-bindings
+  ```
+````
+
+### **2️⃣ Set Up the Project**
+
+- Install dependencies:
+  ```bash
+  npm install
+  ```
+- Build the project:
+  ```bash
+  npm run build
+  ```
+
+### **3️⃣ Create a New Branch**
+
+Before making any changes, create a new branch:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+or for bug fixes:
+
+```bash
+git checkout -b fix/your-fix-name
+```
+
+### **4️⃣ Make Changes**
+
+- Implement your feature or fix.
+- Ensure the build succeeds:
+  ```bash
+  npm run build
+  ```
+- If you modified TypeScript files, check types:
+  ```bash
+  tsc --noEmit
+  ```
+
+### **5️⃣ Test Your Changes**
+
+We encourage testing before submitting PRs!  
+_(Unit tests are coming soon!)_
+
+### **6️⃣ Commit and Push**
+
+- Stage your changes:
+  ```bash
+  git add .
+  ```
+- Commit your changes using a **meaningful commit message**:
+  ```bash
+  git commit -m "✨ Add new feature: Keyboard shortcuts for Mac"
+  ```
+- Push your changes:
+  ```bash
+  git push origin feature/your-feature-name
+  ```
+
+### **7️⃣ Open a Pull Request (PR)**
+
+- Go to your fork on GitHub.
+- Click **"New Pull Request"**.
+- Select your branch and describe the changes you've made.
+- Submit the PR! 🚀
+
+---
+
+## 💡 Contribution Guidelines
+
+✔ **Write clean, modular code**  
+✔ **Use descriptive commit messages**  
+✔ **Follow the existing coding style**  
+✔ **Ensure all TypeScript types are correct**
+
+---
+
+## 🛠 Need Help?
+
+If you need any help or have questions, feel free to **open an issue** on [GitHub Issues](https://github.com/Amaru333/-hookies-key-bindings/issues).
+
+```
 
 ---
 
@@ -117,7 +205,8 @@ This project is licensed under the **ISC License**.
 
 ## ⭐ **Support & Feedback**
 
-If you like this project, give it a ⭐ on [GitHub](https://github.com/hookies/key-bindings)!  
-For issues or feature requests, open an [issue](https://github.com/hookies/key-bindings/issues).
+If you like this project, give it a ⭐ on [GitHub](https://github.com/Amaru333/-hookies-key-bindings)!
+For issues or feature requests, open an [issue](https://github.com/Amaru333/-hookies-key-bindings/issues).
 
 Happy coding! 🚀
+```
