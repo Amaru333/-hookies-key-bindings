@@ -1,10 +1,27 @@
 # 🚀 @hookies/key-bindings
 
-[![npm version](https://img.shields.io/npm/v/@hookies/key-bindings?color=blue)](https://www.npmjs.com/package/@amaru333/key-bindings)
+[![npm version](https://img.shields.io/npm/v/@hookies/key-bindings?color=blue)](https://www.npmjs.com/package/@hookies/key-bindings)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Supported-blue)](https://www.typescriptlang.org/)
 [![GitHub issues](https://img.shields.io/github/issues/Amaru333/-hookies-key-bindings)](https://github.com/Amaru333/-hookies-key-bindings/issues)
 
 A lightweight **React Hook** for adding **keyboard shortcuts** to your application. Easily bind keyboard combinations to functions without extra configuration!
+
+---
+
+## 📖 Table of Contents
+
+- [📦 Installation](#-installation)
+- [🔥 Usage](#-usage)
+- [🎯 OS-Specific Shortcuts](#-os-specific-shortcuts)
+- [⚙ API Reference](#-api-reference)
+  - [`useShortcut`](#useshortcutkeys-string-callback--void-options-useshortcutoptions)
+  - [`getOS`](#getos)
+- [🛠 Advanced Features (Coming Soon)](#-advanced-features-coming-soon)
+- [🚀 Contributing](#-contributing-to-hookies-key-bindings)
+- [📜 License](#-license)
+- [⭐ Support & Feedback](#-support--feedback)
+
+---
 
 ## 📦 Installation
 
@@ -47,7 +64,7 @@ export default App;
 
 ## 🎯 **OS-Specific Shortcuts**
 
-This library **does not auto-adjust** shortcuts for Mac vs Windows. If you need platform-specific bindings, use `getOS()`:
+This library **does not auto-adjust** shortcuts for Mac vs Windows. If you need platform-specific bindings, use [`getOS()`](#getos).
 
 ```tsx
 import { useShortcut, getOS } from "@hookies/key-bindings";
@@ -62,7 +79,7 @@ useShortcut(shortcutKeys, () => console.log("Shortcut Triggered!"));
 
 ## ⚙ **API Reference**
 
-### `useShortcut(keys: string[], callback: () => void, options?: UseShortcutOptions)`
+### [`useShortcut(keys: string[], callback: () => void, options?: UseShortcutOptions)`](#useshortcutkeys-string-callback--void-options-useshortcutoptions)
 
 - **`keys`** _(string[])_ – Array of keys that should trigger the shortcut (e.g., `["Ctrl", "8"]`).
 - **`callback`** _(function)_ – Function to execute when the shortcut is triggered.
@@ -77,7 +94,7 @@ useShortcut(["Ctrl", "S"], () => console.log("Save triggered"), { preventDefault
 
 ---
 
-### `getOS()`
+### [`getOS()`](#getos)
 
 Returns the user's operating system as a string: `"Windows"`, `"MacOS"`, `"Linux"`, `"Android"`, `"iOS"`, or `"Unknown"`.
 
@@ -97,12 +114,10 @@ console.log(getOS()); // Outputs: "MacOS"
 
 ---
 
-# 🚀 Contributing to Hookies Key Bindings
+## 🚀 **Contributing to Hookies Key Bindings**
 
 🎉 Thank you for considering contributing to **Hookies Key Bindings**!  
 We welcome all contributions, whether it's **bug fixes, feature additions, documentation updates, or tests**.
-
-## 🛠 How to Contribute
 
 ### **1️⃣ Fork the Repository**
 
@@ -180,21 +195,6 @@ _(Unit tests are coming soon!)_
 
 ---
 
-## 💡 Contribution Guidelines
-
-✔ **Write clean, modular code**  
-✔ **Use descriptive commit messages**  
-✔ **Follow the existing coding style**  
-✔ **Ensure all TypeScript types are correct**
-
----
-
-## 🛠 Need Help?
-
-If you need any help or have questions, feel free to **open an issue** on [GitHub Issues](https://github.com/Amaru333/-hookies-key-bindings/issues).
-
----
-
 ## 📜 **License**
 
 This project is licensed under the **ISC License**.
@@ -203,7 +203,5 @@ This project is licensed under the **ISC License**.
 
 ## ⭐ **Support & Feedback**
 
-If you like this project, give it a ⭐ on [GitHub](https://github.com/Amaru333/-hookies-key-bindings)!
+If you like this project, give it a ⭐ on [GitHub](https://github.com/Amaru333/-hookies-key-bindings)!  
 For issues or feature requests, open an [issue](https://github.com/Amaru333/-hookies-key-bindings/issues).
-
-Happy coding! 🚀
