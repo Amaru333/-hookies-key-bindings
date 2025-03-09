@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
+    "target": "ES2016",
+    "lib": ["ES2016", "DOM"],
     "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": false,
-    "allowJs": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "strict": true,
-    "lib": ["es2015", "dom"]
+    "strict": true
   },
   "include": ["src"]
 }

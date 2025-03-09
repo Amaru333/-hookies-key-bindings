@@ -1,11 +1,13 @@
 {
   "name": "@hookies/key-bindings",
-  "version": "1.0.6",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "A React hook library for adding keyboard shortcuts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -14,7 +16,6 @@
   "keywords": [],
   "author": "Amaru",
   "license": "ISC",
-  "description": "A react hook to add key bindings to your application",
   "dependencies": {
     "react": "^19.0.0",
     "tslib": "^2.8.1"
