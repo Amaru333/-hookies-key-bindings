@@ -1,6 +1,6 @@
 {
   "name": "@hookies/key-bindings",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A React hook library for adding keyboard shortcuts",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -13,7 +13,41 @@
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "hooks",
+    "keyboard",
+    "shortcuts",
+    "key-bindings",
+    "hotkeys",
+    "hotkey",
+    "hot-keys",
+    "hot-key",
+    "key bindings",
+    "key binding",
+    "keyboard shortcuts",
+    "keyboard shortcut",
+    "keyboard events",
+    "keyboard event",
+    "keyboard events listener",
+    "keyboard event listener",
+    "keyboard events listeners",
+    "keyboard event listeners",
+    "keyboard events handling",
+    "keyboard event handling",
+    "keyboard events handler",
+    "keyboard event handler",
+    "keyboard events handlers",
+    "keyboard event handlers",
+    "keyboard events management",
+    "keyboard event management",
+    "keyboard events manager",
+    "keyboard event manager",
+    "keyboard events managers",
+    "keyboard event managers",
+    "keyboard events managerment",
+    "keyboard event managerment"
+  ],
   "author": "Amaru",
   "license": "ISC",
   "dependencies": {
@@ -27,5 +61,6 @@
     "@types/react": "^19.0.10",
     "rollup": "^4.34.9",
     "typescript": "^5.8.2"
-  }
+  },
+  "homepage": "https://github.com/Amaru333/-hookies-key-bindings#-hookieskey-bindings"
 }
