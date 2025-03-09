@@ -15,6 +15,7 @@ A lightweight **React Hook** for adding **keyboard shortcuts** to your applicati
 - [🎯 OS-Specific Shortcuts](#-os-specific-shortcuts)
 - [⚙ API Reference](#-api-reference)
   - [`useShortcut`](#useshortcutkeys-string-callback--void-options-useshortcutoptions)
+  - [`useShortcutExtended`](#useshortcutextendedkeys-string-callback--void-options-useshortcutoptions)
   - [`getOS`](#getos)
 - [🛠 Advanced Features (Coming Soon)](#-advanced-features-coming-soon)
 - [🚀 Contributing](#-contributing-to-hookies-key-bindings)
@@ -41,9 +42,9 @@ yarn add @hookies/key-bindings
 
 ## 🔥 Usage
 
-Import the `useShortcut` hook and bind a keyboard shortcut to an action.
+Import the `useShortcut` or `useShortcutExtended` hook and bind a keyboard shortcut to an action.
 
-### **Basic Example**
+### **Basic Example: Modifier-Based Shortcuts (`useShortcut`)**
 
 ```tsx
 import React, { useState } from "react";
@@ -53,6 +54,23 @@ const App = () => {
   const [message, setMessage] = useState("Press Ctrl+8");
 
   useShortcut(["Ctrl", "8"], () => setMessage("Shortcut Triggered!"));
+
+  return <h1>{message}</h1>;
+};
+
+export default App;
+```
+
+### **Example: Any Key Combination (`useShortcutExtended`)**
+
+```tsx
+import { useState } from "react";
+import { useShortcutExtended } from "@hookies/key-bindings";
+
+const App = () => {
+  const [message, setMessage] = useState("Press A + S");
+
+  useShortcutExtended(["a", "s"], () => setMessage("Shortcut Triggered!"));
 
   return <h1>{message}</h1>;
 };
@@ -90,6 +108,24 @@ useShortcut(shortcutKeys, () => console.log("Shortcut Triggered!"));
 
 ```tsx
 useShortcut(["Ctrl", "S"], () => console.log("Save triggered"), { preventDefault: true });
+```
+
+---
+
+### [`useShortcutExtended(keys: string[], callback: () => void, options?: UseShortcutOptions)`](#useshortcutextendedkeys-string-callback--void-options-useshortcutoptions)
+
+This hook detects **any key combination**, including non-modifier keys.
+
+- **`keys`** _(string[])_ – Array of keys to trigger the shortcut (e.g., `["a", "s"]`).
+- **`callback`** _(function)_ – Function to execute when the shortcut is triggered.
+- **`options`** _(optional)_
+  - `preventDefault` _(boolean)_ – Prevents default browser behavior (default: `false`).
+
+#### **Example: Detecting Non-Modifier Key Combinations**
+
+```tsx
+useShortcutExtended(["a", "s"], () => console.log("Pressed A + S!"));
+useShortcutExtended(["x", "z", "q"], () => console.log("Pressed X + Z + Q!"));
 ```
 
 ---
