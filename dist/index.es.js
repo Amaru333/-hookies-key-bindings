@@ -1,7 +1,7 @@
 import { useEffect, useRef, useMemo } from 'react';
 
 /**
- * `useShortcut` - Detects **modifier-based** keyboard shortcuts.
+ * `useShortcut` - Detects modifier-based keyboard shortcuts.
  * Example: `Ctrl + C`, `Shift + A`, `Meta + S`
  */
 function useShortcut(keys, callback, options = {}) {
@@ -17,7 +17,6 @@ function useShortcut(keys, callback, options = {}) {
             if (event.metaKey)
                 pressedKeys.add("meta");
             pressedKeys.add(event.key.toLowerCase());
-            // console.log(pressedKeys, "useShortcut");
             const isMatch = keys.every((key) => pressedKeys.has(key.toLowerCase()));
             if (isMatch) {
                 if (options.preventDefault)
@@ -31,7 +30,7 @@ function useShortcut(keys, callback, options = {}) {
 }
 
 /**
- * `useShortcutExtended` - Detects **any** keyboard shortcut.
+ * `useShortcutExtended` - Detects any keyboard shortcut.
  * Example: `A + S`, `A + 1 + M`, `X + Z`
  */
 function useShortcutExtended(keys, callback, options = {}) {

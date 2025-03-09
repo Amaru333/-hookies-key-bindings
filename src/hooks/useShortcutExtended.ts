@@ -7,7 +7,7 @@ interface UseShortcutOptions {
 }
 
 /**
- * `useShortcutExtended` - Detects **any** keyboard shortcut.
+ * `useShortcutExtended` - Detects any keyboard shortcut.
  * Example: `A + S`, `A + 1 + M`, `X + Z`
  */
 export function useShortcutExtended(
