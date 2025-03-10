@@ -11,6 +11,7 @@ A lightweight **React Hook** for adding **keyboard shortcuts** to your applicati
 ## 📖 Table of Contents
 
 - [📦 Installation](#-installation)
+- [🎮 Playground - Test Key Bindings Online](#-playground---test-key-bindings-online)
 - [🔥 Usage](#-usage)
 - [🎯 OS-Specific Shortcuts](#-os-specific-shortcuts)
 - [⚙ API Reference](#-api-reference)
@@ -37,6 +38,27 @@ or using yarn:
 ```bash
 yarn add @hookies/key-bindings
 ```
+
+---
+
+## 🎮 Playground - Test Key Bindings Online
+
+Want to try out keyboard shortcuts before using them in your project? Use our **interactive playground** to generate the function dynamically!
+
+🛠 **[🔗 Open Playground](https://amaru333.github.io/hookies/components/key-bindings#playground)**
+
+- **Press any key combination** (e.g., `Meta + X`, `Ctrl + Shift + A`).
+- The playground **shows the generated function** with the exact keys pressed.
+- Copy the generated function and paste it into your project.
+
+📌 **Example Output in Playground**  
+If you press `Meta + X`, the playground will generate:
+
+```tsx
+useShortcut(["meta", "x"], func);
+```
+
+Just **copy and use** in your code! 🚀
 
 ---
 
@@ -190,7 +212,7 @@ or for bug fixes:
 git checkout -b fix/your-fix-name
 ```
 
-### **4️⃣ Make Changes**
+### **4️⃣ Make Changes and Test**
 
 - Implement your feature or fix.
 - Ensure the build succeeds:
@@ -202,32 +224,19 @@ git checkout -b fix/your-fix-name
   tsc --noEmit
   ```
 
-### **5️⃣ Test Your Changes**
+### **5️⃣ Commit and Push**
 
-We encourage testing before submitting PRs!  
-_(Unit tests are coming soon!)_
-
-### **6️⃣ Commit and Push**
-
-- Stage your changes:
-  ```bash
-  git add .
-  ```
-- Commit your changes using a **meaningful commit message**:
+- Commit your changes:
   ```bash
   git commit -m "✨ Add new feature: Keyboard shortcuts for Mac"
   ```
 - Push your changes:
+
   ```bash
   git push origin feature/your-feature-name
   ```
 
-### **7️⃣ Open a Pull Request (PR)**
-
-- Go to your fork on GitHub.
-- Click **"New Pull Request"**.
-- Select your branch and describe the changes you've made.
-- Submit the PR! 🚀
+- Open a **Pull Request (PR)** and submit your changes! 🚀
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "@hookies/key-bindings",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A React hook library for adding keyboard shortcuts",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
